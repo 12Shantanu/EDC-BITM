@@ -286,17 +286,18 @@ const container = document.getElementById("listOfStartups");
         return -1;
     return 1;
 });*/
-
+// , ${data[i]['graduated']}
 for (let i = 0; i < data.length; i++) {
     container.innerHTML += (`
       <div class="member-container">
                     <div class="member">
                         <div class="details">
-                            <h4 class="name">${data[i]['name']}</h4>
-                            <h6 class="position">${data[i]['course']}, ${data[i]['graduated']}</h6>
+                            
                             <a class="startup-link" href="${data[i]['startup-website']}">
-                                <h5 class="position-link">${data[i]['startup']}, ${data[i]['start-location']}</h5>
+                                <h4 class="position-link">${data[i]['startup']}, ${data[i]['start-location']}</h4>
                             </a>
+                            <h5 class="name">${data[i]['name']}</h5>
+                            <h6 class="position">${data[i]['course']}</h6>
                             <h5 class="position">${data[i]['startup-nature']}</h5>
                         </div>
                         <div class="social">
