@@ -59,6 +59,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 body {
@@ -169,6 +170,19 @@ body {
 }
 .landing-section .navbar nav .link ul li {
   padding: 0px 15px;
+}
+@media screen and (min-width: 810px) and (max-width: 900px){
+  .landing-section .navbar nav .link ul li{
+    padding: 0px 8px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 811px){
+  .landing-section .navbar nav .link ul li{
+    padding: 0px 8px;
+  }
+  .landing-section .navbar nav .contact a{
+    width: 100px; height: 70px;
+  }
 }
 .landing-section .navbar nav .link ul li a {
   text-decoration: none;
